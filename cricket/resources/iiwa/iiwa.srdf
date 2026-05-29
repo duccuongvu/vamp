@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SRDF for iiwa_spherized.urdf (KUKA IIWA14 + Robotiq 2F-85). -->
+<!-- Semantic info for Cricket / MoveIt: planning groups and self-collision disables. -->
+<robot name="iiwa">
+  <group name="iiwa_arm">
+    <chain base_link="iiwa_link_0" tip_link="iiwa_link_ee"/>
+  </group>
+  <group name="gripper">
+    <link name="robotiq_arg2f_base_link"/>
+    <link name="left_outer_knuckle"/>
+    <link name="left_outer_finger"/>
+    <link name="left_inner_finger"/>
+    <link name="left_inner_finger_pad"/>
+    <link name="left_inner_knuckle"/>
+    <link name="right_outer_knuckle"/>
+    <link name="right_outer_finger"/>
+    <link name="right_inner_finger"/>
+    <link name="right_inner_finger_pad"/>
+    <link name="right_inner_knuckle"/>
+  </group>
+  <group name="iiwa_manipulator">
+    <group name="iiwa_arm"/>
+    <group name="gripper"/>
+  </group>
+  <group_state group="iiwa_arm" name="home">
+    <joint name="iiwa_joint_1" value="0"/>
+    <joint name="iiwa_joint_2" value="0"/>
+    <joint name="iiwa_joint_3" value="0"/>
+    <joint name="iiwa_joint_4" value="0"/>
+    <joint name="iiwa_joint_5" value="0"/>
+    <joint name="iiwa_joint_6" value="0"/>
+    <joint name="iiwa_joint_7" value="0"/>
+  </group_state>
+  <group_state group="iiwa_arm" name="ready">
+    <joint name="iiwa_joint_1" value="0"/>
+    <joint name="iiwa_joint_2" value="-0.7853981633974483"/>
+    <joint name="iiwa_joint_3" value="0"/>
+    <joint name="iiwa_joint_4" value="-2.356194490192345"/>
+    <joint name="iiwa_joint_5" value="0"/>
+    <joint name="iiwa_joint_6" value="1.5707963267948966"/>
+    <joint name="iiwa_joint_7" value="0"/>
+  </group_state>
+  <virtual_joint child_link="iiwa_link_0" name="virtual_joint" parent_frame="world" type="fixed"/>
+  <end_effector name="robotiq_gripper" parent_link="iiwa_link_ee" group="gripper" parent_group="iiwa_arm"/>
+  <disable_collisions link1="iiwa_link_0" link2="iiwa_link_1" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_0" link2="iiwa_link_2" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="iiwa_link_3" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="iiwa_link_4" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_0" link2="robotiq_arg2f_base_link" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="iiwa_link_2" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_1" link2="iiwa_link_3" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="iiwa_link_4" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="iiwa_link_5" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_1" link2="robotiq_arg2f_base_link" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="iiwa_link_3" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_2" link2="iiwa_link_4" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="iiwa_link_6" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_2" link2="robotiq_arg2f_base_link" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="iiwa_link_4" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_3" link2="iiwa_link_5" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="iiwa_link_6" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="iiwa_link_7" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_3" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="iiwa_link_5" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_4" link2="iiwa_link_6" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="iiwa_link_7" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_4" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="iiwa_link_6" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_5" link2="iiwa_link_7" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_5" link2="robotiq_arg2f_base_link" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="iiwa_link_7" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_6" link2="iiwa_link_ee" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_6" link2="robotiq_arg2f_base_link" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="iiwa_link_ee" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_7" link2="left_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="left_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="iiwa_link_7" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+  <disable_collisions link1="iiwa_link_ee" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+  <disable_collisions link1="left_inner_finger" link2="left_inner_finger_pad" reason="Adjacent"/>
+  <disable_collisions link1="left_inner_finger" link2="left_outer_finger" reason="Adjacent"/>
+  <disable_collisions link1="left_inner_finger" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_finger" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_finger" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="left_inner_finger" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_finger" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_finger" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="left_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="right_inner_finger_pad" reason="Default"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_finger_pad" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="left_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="left_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_inner_knuckle" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+  <disable_collisions link1="left_outer_finger" link2="left_outer_knuckle" reason="Adjacent"/>
+  <disable_collisions link1="left_outer_finger" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="left_outer_finger" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="left_outer_finger" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_outer_finger" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_outer_finger" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="right_inner_finger" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="right_inner_finger_pad" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="left_outer_knuckle" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+  <disable_collisions link1="right_inner_finger" link2="right_inner_finger_pad" reason="Adjacent"/>
+  <disable_collisions link1="right_inner_finger" link2="right_outer_finger" reason="Adjacent"/>
+  <disable_collisions link1="right_inner_finger" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="right_inner_finger_pad" link2="right_inner_knuckle" reason="Never"/>
+  <disable_collisions link1="right_inner_finger_pad" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="right_inner_knuckle" link2="right_outer_finger" reason="Never"/>
+  <disable_collisions link1="right_inner_knuckle" link2="right_outer_knuckle" reason="Never"/>
+  <disable_collisions link1="right_inner_knuckle" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+  <disable_collisions link1="right_outer_finger" link2="right_outer_knuckle" reason="Adjacent"/>
+  <disable_collisions link1="right_outer_knuckle" link2="robotiq_arg2f_base_link" reason="Adjacent"/>
+</robot>

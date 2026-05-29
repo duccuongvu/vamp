@@ -1,0 +1,9 @@
+/.cache/
+/.cpm-cache/
+/build/
+/debug/
+/output.data
+/output.json
+/*_fk.hh
+/resources/
+Dockerfile

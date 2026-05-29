@@ -1,0 +1,10 @@
+{
+    "name": "Iiwa",
+    "urdf": "iiwa/iiwa_spherized.urdf",
+    "srdf": "iiwa/iiwa.srdf",
+    "end_effector": "robotiq_arg2f_base_link",
+    "resolution": 32,
+    "template": "templates/fk_template.hh",
+    "subtemplates": [{"name": "ccfk", "template": "templates/ccfk_template.hh"}],
+    "output": "iiwa_fk.hh"
+}
