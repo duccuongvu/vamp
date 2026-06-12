@@ -7,12 +7,12 @@ import vamp
 from viser_utils import add_spheres, add_trajectory, setup_viser_with_robot
 
 START = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-# GOAL = [0.089, 0.67, 0.0, -1.24, 0.0, 0.0, 0.0]
-GOAL_DEG = [-44.5, -31.8,  37.2, -70.7,  -9.8,  0.1,  19.8]
+GOAL = [0.089, 0.67, 0.0, -1.24, 0.0, 0.0, 0.0]
+# GOAL_DEG = [-44.5, -31.8,  37.2, -70.7,  -9.8,  0.1,  19.8]
 # GOAL_DEG
 # GOAL_DEG = [5.0993, 38.3882, 0, -71.0468, 0, 0, 0]
-GOAL = np.deg2rad(GOAL_DEG)
-OBSTACLE_CENTER = [4, 0.0, 8]
+# GOAL = np.deg2rad(GOAL_DEG)
+OBSTACLE_CENTER = [0.4, 0.0, 0.8]
 OBSTACLE_RADIUS = 0.03
 
 

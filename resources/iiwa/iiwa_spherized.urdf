@@ -25,7 +25,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_0.obj"/>
+        <mesh filename="link_0.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -45,7 +45,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_1.obj"/>
+        <mesh filename="link_1.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -89,14 +89,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_2_orange.obj"/>
+        <mesh filename="link_2_orange.obj"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_2_grey.obj"/>
+        <mesh filename="link_2_grey.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -156,21 +156,21 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_3.obj"/>
+        <mesh filename="link_3.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/band.obj"/>
+        <mesh filename="band.obj"/>
       </geometry>
       <material name="light_gray"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/kuka.obj"/>
+        <mesh filename="kuka.obj"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -230,14 +230,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_4_orange.obj"/>
+        <mesh filename="link_4_orange.obj"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_4_grey.obj"/>
+        <mesh filename="link_4_grey.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -285,21 +285,21 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_5.obj"/>
+        <mesh filename="link_5.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/band.obj"/>
+        <mesh filename="band.obj"/>
       </geometry>
       <material name="light_gray"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/kuka.obj"/>
+        <mesh filename="kuka.obj"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -359,14 +359,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_6_orange.obj"/>
+        <mesh filename="link_6_orange.obj"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_6_grey.obj"/>
+        <mesh filename="link_6_grey.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -402,7 +402,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="assets/link_7.obj"/>
+        <mesh filename="link_7.obj"/>
       </geometry>
       <material name="gray"/>
     </visual>
