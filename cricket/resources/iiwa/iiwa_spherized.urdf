@@ -29,10 +29,10 @@
       </geometry>
       <material name="gray"/>
     </visual>
-    <collision>
+    <!-- <collision>
       <origin xyz="0 0 0.00" rpy="0 0 0"/>
       <geometry><sphere radius="0.07"/></geometry>
-    </collision>
+    </collision> -->
   </link>
 
   <!-- ===================== link1 ===================== -->
